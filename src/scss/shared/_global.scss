@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1600px;
+  @extend .font--poppins;
+}
+
+$large: "1280px";
+$medium: "960px";
+$small: "599px";

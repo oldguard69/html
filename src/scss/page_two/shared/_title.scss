@@ -1,0 +1,13 @@
+.section-title {
+  font-size: 50px;
+  line-height: 67px;
+  letter-spacing: -3px;
+  @include font--semiBold;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  line-height: 27px;
+  color: rgb(126, 118, 249);
+  @include font--regular;
+}

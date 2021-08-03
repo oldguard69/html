@@ -1,0 +1,137 @@
+.footer {
+  margin-top: 105px;
+  height: 570px;
+  background-image: url("../../asset/img/page_two/test.svg");
+  background-size: cover;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include maxWidth($medium) {
+    display: flex;
+  }
+
+  &__container {
+    margin: 260px 217px 29px 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    @include maxWidth($large) {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    @include maxWidth($medium) {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__menu-header {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 32px;
+    font-weight: 300;
+
+    @include maxWidth($medium) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__menu-container > * {
+    margin-bottom: 12px;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 67px;
+
+    @include maxWidth($medium) {
+      margin-left: 0;
+    }
+
+    h2 {
+      font-size: 50px;
+      line-height: 25.71px;
+      font-weight: 300;
+      margin-top: 19px;
+      margin-left: 17px;
+      letter-spacing: -3px;
+    }
+
+    h3 {
+      font-size: 31px;
+      line-height: 56px;
+      margin-top: 39px;
+      letter-spacing: -2px;
+      margin-left: -27px;
+      @include font--medium;
+    }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+      margin-top: 14px;
+      & > * {
+        margin: 0 19px;
+      }
+    }
+
+    .fab {
+      color: white;
+      font-size: 18px;
+    }
+  }
+
+  &__hours,
+  &__quicklink {
+    margin-left: 115px;
+
+    .footer__menu-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include maxWidth($medium) {
+      margin-left: 0;
+    }
+  }
+
+  &__quicklink {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__hours {
+    .hours-container__row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__contact {
+    margin-left: 64px;
+
+    @include maxWidth($medium) {
+      margin-left: 0;
+    }
+
+    .footer__menu-container > * {
+      margin-top: 0;
+      margin-bottom: 13px;
+
+      &:last-child {
+        margin-top: 26px;
+      }
+    }
+  }
+}

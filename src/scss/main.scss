@@ -1,0 +1,18 @@
+@import "./shared/font";
+@import "./shared/minxin";
+@import "./shared/global";
+
+
+.nav {
+  &__item {
+    margin: 5px 10px;
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: blueviolet;
+        }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.subscription {
+  margin-top: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include maxWidth($medium) {
+    flex-wrap: wrap;
+  }
+
+  .section-subtitle {
+    margin-top: 2px;
+  }
+
+  h4 {
+    font-size: 32px;
+    margin-top: 8px;
+    letter-spacing: -2px;
+    margin-left: -8px;
+    @include font--semiBold;
+
+    @include maxWidth($small) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+
+  &__form-container {
+    margin-top: 43px;
+    margin-left: -10px;
+
+    @include maxWidth($medium) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & :first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    input {
+      width: 400px;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 18px 0 18px 30px;
+      background-color: rgb(246, 247, 251);
+      color: rgba(153, 153, 153, 0.6);
+      border: none;
+
+      @include maxWidth($medium) {
+        width: 300px;
+      }
+    }
+
+    .button {
+      border: 0;
+      margin-left: 21px;
+      padding: 15px 51px 16px;
+      font-size: 16px;
+    }
+  }
+}

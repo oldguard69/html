@@ -1,0 +1,152 @@
+.header {
+  background-image: url("../../asset/img/page_two/Header.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 21px 122px 0 210px;
+
+  @include maxWidth($large) {
+    padding: 10px;
+  }
+
+  @include maxWidth($medium) {
+    grid-template-columns: 1fr;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__col--left {
+    @include maxWidth($medium) {
+      order: 2;
+    }
+
+    .header__info {
+      margin-top: 135px;
+
+      @include maxWidth($medium) {
+        margin-top: 20px;
+      }
+
+      .header__btn-container {
+        margin-left: 2px;
+
+        @include maxWidth($small) {
+          width: max-content;
+          margin-left: auto;
+        }
+      }
+    }
+
+    h2,
+    h3,
+    h4 {
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 80px;
+      letter-spacing: -1px;
+    }
+
+    h2 {
+      font-size: 70px;
+      font-weight: bold;
+      line-height: 80px;
+      margin-top: -6px;
+      letter-spacing: 2px;
+    }
+
+    h4 {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 38px;
+      margin-top: 14px;
+    }
+  }
+
+  &__col--right {
+    align-items: center;
+    margin-top: 35px;
+
+    @include maxWidth($medium) {
+      order: 1;
+    }
+
+    @include maxWidth($small) {
+      position: relative;
+      margin-top: 5px;
+    }
+
+    .header__image-container {
+      max-width: 100%;
+
+      @include maxWidth($large) {
+        width: 75%;
+      }
+
+      @include maxWidth($medium) {
+        width: 50%;
+      }
+    }
+
+    .header__nav {
+      margin-bottom: 60px;
+      margin-right: 20px;
+
+      @include maxWidth($small) {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 12%;
+        left: 0;
+        box-shadow: 1px 5px 5px rgba(126, 118, 249, 0.1);
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px 20px 10px 10px;
+
+        &--display {
+          display: flex;
+        }
+      }
+
+      a {
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        padding-left: 27px;
+        text-transform: uppercase;
+        line-height: 21px;
+
+        @include maxWidth($small) {
+          color: black;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    .header__nav-btn {
+      display: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+
+      &,
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      @include maxWidth($small) {
+        align-self: flex-start;
+        display: block;
+      }
+    }
+  }
+}

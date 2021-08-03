@@ -1,0 +1,37 @@
+@mixin maxWidth($screen) {
+  @media screen and (max-width: $screen) {
+    @content;
+  }
+};
+
+@mixin font--thin {
+  font-weight: 100;
+}
+
+@mixin font--extraLight {
+  font-weight: 200;
+}
+
+@mixin font--light {
+  font-weight: 300;
+}
+
+@mixin font--regular {
+  font-weight: 400;
+}
+
+@mixin font--medium {
+  font-weight: 500;
+}
+
+@mixin font--semiBold {
+  font-weight: 600;
+}
+
+@mixin font--bold {
+  font-weight: 700;
+}
+
+@mixin font--extraBold {
+  font-weight: 800;
+}

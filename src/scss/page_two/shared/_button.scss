@@ -1,0 +1,27 @@
+.button {
+  padding: 13px 43px 15px;
+  border-radius: 26px;
+  outline: none;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    background: linear-gradient(to right, #1a129f 60%, #6156f9);
+    color: white;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--secondary {
+    border: 1px solid rgb(16, 0, 255);
+    color: black;
+  }
+}

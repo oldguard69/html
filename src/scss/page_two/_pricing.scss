@@ -1,0 +1,88 @@
+.pricing {
+  background-color: rgba(126, 118, 249, 0.15);
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-title {
+    margin-top: 13px;
+    margin-left: -4px;
+  }
+
+  &__card-container {
+    margin: 62px 170px 0;
+    display: flex;
+    flex-direction: row;
+
+    @include maxWidth($large) {
+      flex-direction: column;
+
+      & > *:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include maxWidth($small) {
+      margin: 20px 50px;
+    }
+
+    .pricing-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 26px;
+
+      &__header {
+        margin-top: 57px;
+        font-size: 28px;
+        line-height: 41px;
+        font-weight: 400;
+        letter-spacing: -2px;
+      }
+
+      p {
+        margin: 66px 40px 2px;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 200;
+        height: calc(25px * 3);
+        overflow-y: hidden;
+        letter-spacing: -1px;
+        text-align: center;
+      }
+
+      &__price {
+        margin-top: 36px;
+        font-size: 30px;
+        line-height: 40px;
+        color: rgb(16, 0, 255);
+        font-weight: 300;
+      }
+
+      &__button {
+        margin: 40px 0px 51px;
+        padding: 16px 41px 12px;
+      }
+
+      &--center {
+        margin: 0 75px;
+
+        @include maxWidth($large) {
+          margin: 0 0 20px;
+        }
+      }
+    }
+  }
+
+  &__dot {
+    display: flex;
+    align-items: center;
+    margin: 90px 0 45px;
+
+    & > * {
+      margin: 0 6px;
+    }
+  }
+}

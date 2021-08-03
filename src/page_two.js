@@ -1,0 +1,1 @@
+import './scss/page_two/page_two_main.scss'
