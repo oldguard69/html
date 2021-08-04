@@ -1,0 +1,248 @@
+$tabHeaderBorder: 1px solid #a7a7a7;
+$tabLinkActiceBorder: 5px solid #163235;
+@keyframes fadeEffect {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
+
+.recommendation {
+  background-image: url("../../asset/img/page_one/recommend-bg.png");
+  height: 1860px;
+
+  @include maxWidth($extraLarge) {
+    height: max-content;
+    background-repeat: repeat-y;
+  }
+
+  &__title {
+    padding-top: 61px;
+    margin-bottom: 79px;
+    margin-left: 46px;
+    letter-spacing: 1px;
+
+    @include maxWidth($medium) {
+      margin-left: 0;
+    }
+
+    @include maxWidth($small) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__tab-header {
+    display: flex;
+    margin: 0 359px 64px;
+    justify-content: space-between;
+    border-bottom: $tabHeaderBorder;
+
+    @include maxWidth($max) {
+      margin: 0 auto 64px;
+      width: 80%;
+    }
+
+    @include maxWidth($large) {
+      width: 90%;
+    }
+
+    @include maxWidth($medium) {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+    @include maxWidth($small) {
+      display: flex;
+      flex-direction: column;
+      border-left: $tabHeaderBorder;
+      border-bottom: none;
+    }
+
+    .tab__link {
+      font-size: 28px;
+      line-height: 35px;
+      text-transform: capitalize;
+      letter-spacing: -2px;
+      padding-bottom: 7px;
+      @include font--semiBold;
+
+      @include maxWidth($large) {
+        font-size: 25px;
+      }
+
+      @include maxWidth($medium) {
+        margin-bottom: 10px;
+      }
+
+      @include maxWidth($small) {
+        padding-left: 10px;
+      }
+
+      &:nth-child(2) {
+        // the package holiday
+        margin-left: -5px;
+        margin-right: 6px;
+
+        @include maxWidth($small) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      &:last-child {
+        @include maxWidth($small) {
+          margin-bottom: 0;
+        }
+      }
+
+      &--active, &:hover {
+        border-bottom: $tabLinkActiceBorder;
+        cursor: pointer;
+        transition: border 150ms;
+
+        @include maxWidth($small) {
+          border-left: $tabLinkActiceBorder;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &__tab-container {
+    .tab__content {
+      margin: 0 64px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 200px;
+      column-gap: 68px;
+      display: none;
+      animation: fadeEffect 1000ms;
+
+      @include maxWidth($extraLarge) {
+        grid-template: repeat(3, 1fr) / 1fr 1fr;
+        row-gap: 150px;
+      }
+
+      @include maxWidth($large) {
+        row-gap: 100px;
+        column-gap: 40px;
+        margin: 0 30px;
+      }
+
+      @include maxWidth($small) {
+        grid-template: repeat(6, 1fr) / 1fr;
+        row-gap: 70px;
+      }
+
+      &--active {
+        display: grid;
+      }
+    }
+  }
+
+  &__card {
+    & > img {
+      border-radius: 15px;
+      width: 100%;
+      height: auto;
+    }
+
+    h4 {
+      font-size: 38px;
+      line-height: 51px;
+      color: #163235;
+      margin-top: 8px;
+      letter-spacing: -1.75px;
+      @include font--bold;
+
+      @include maxWidth($large) {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      @include maxWidth($small) {
+        margin-top: 0;
+        font-size: 25px;
+        line-height: 1;
+      }
+    }
+
+    & > p {
+      font-size: 26px;
+      line-height: 35px;
+      height: 33px;
+      overflow: hidden;
+      margin-top: 12px;
+      letter-spacing: -1.5px;
+      @include font--regular;
+
+      @include maxWidth($medium) {
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+
+    &-price,
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-price {
+      margin-top: 47px;
+
+      @include maxWidth($medium) {
+        margin-top: 0;
+      }
+
+      & > div {
+        & > *:nth-child(2) {
+          margin: 0 7px 0 11px;
+        }
+      }
+
+      p {
+        font-size: 31px;
+        line-height: 41px;
+        color: #163235;
+        @include font--semiBold;
+        margin-right: 7px;
+        letter-spacing: -1.5px;
+
+        @include maxWidth($medium) {
+          font-size: 22px;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    &-info {
+      margin-top: 9px;
+
+      @include maxWidth($medium) {
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 22px;
+        line-height: 30px;
+        @include font--regular;
+
+        @include maxWidth($small) {
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        &:first-child {
+          letter-spacing: -1px;
+          margin-left: 2px;
+        }
+
+        &:last-child {
+          letter-spacing: -0.5px;
+          margin-right: -5px;
+        }
+      }
+    }
+  }
+}

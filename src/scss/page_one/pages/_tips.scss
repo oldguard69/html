@@ -1,0 +1,94 @@
+.tips {
+  margin: 179px 70px 178px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+
+  @include maxWidth($max) {
+    gap: 30px;
+  }
+
+  @include maxWidth($extraLarge) {
+    margin: 50px 20px;
+  }
+
+  @include maxWidth($large) {
+    margin: 50px;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @include maxWidth($medium) {
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: center;
+  }
+
+  @include maxWidth($small) {
+    grid-template: repeat(4, 1fr) / 1fr;
+  }
+
+  &__card {
+    padding: 29px 68px 20px 26px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 10px;
+    height: max-content;
+
+    @include maxWidth($extraLarge) {
+      padding: 10px;
+    }
+
+    @include maxWidth($medium) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include maxWidth($small) {
+      width: 90%;
+    }
+
+    &--third {
+      img {
+        margin-left: 10px;
+      }
+    }
+
+    &--last {
+      padding: 29px 20px 20px 26px;
+      
+      @include maxWidth($extraLarge) {
+        padding: 10px;
+      }
+    }
+
+    &-image-container {
+      width: 103px;
+      height: 97px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      background-color: rgb(240, 244, 252);
+      box-shadow: 0 3px 6px rgb(240, 244, 252);
+    }
+
+    &-title {
+      margin: 11px 0 23px 0;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -1px;
+      @include font--semiBold;
+    }
+
+    &-description {
+      font-size: 20px;
+      line-height: 27px;
+      height: calc(27px * 3);
+      letter-spacing: -1px;
+      @include font--regular;
+      overflow: hidden;
+    }
+  }
+}

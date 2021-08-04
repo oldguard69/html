@@ -4,147 +4,911 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Travelo</title>
+    <link rel="stylesheet" href="../asset/font/proxima/stylesheet.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="../asset/css/page_one/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="../asset/css/page_one/owl.theme.default.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../asset/javascript/page_one/owl.carousel.min.js"></script>
   </head>
   <body>
-    <section class="header">
-      <div class="header__col header__col--left">
-        <div class="header__logo">
-          <img src="" alt="" />
-          <h4>Pawtastic</h4>
-        </div>
-        <p>Ozzie in Brooklyn</p>
+    <div class="header">
+      <img
+        src="../asset/img/page_one/logo.png"
+        alt="Travelo logo"
+        class="header__logo"
+      />
+      <div class="header__nav" id="header__nav">
+        <a href="#" class="header__nav-item header__nav-item--active"> Home </a>
+        <a href="#" class="header__nav-item"> About</a>
+        <a href="#" class="header__nav-item">Places</a>
+        <a href="#" class="header__nav-item">Careers</a>
+        <a href="#" class="header__nav-item">Blogs</a>
       </div>
-      <div class="header__col header__col--left">
-        <nav class="header__nav">
-          <a href="">About us</a>
-          <a href="">Review</a>
-          <a href="">Services</a>
-          <a href="">Sign up</a>
-        </nav>
-        <h2>We care for your furry little loved ones while you’re away</h2>
-        <button>Schedule a visit</button>
-      </div>
-    </section>
 
-    <section class="intro">
-      <div class="intro__info">
-        <h3 class="section-title">
-          Expert care for your furry, feathery, or scaley friend
-        </h3>
-        <p>
-          We know how stressful it is to leave your pets at home alone. We’re a
-          team of experienced animal caregivers, well connected to local
-          veterinarians. Trust to us to love them like our own, and to keep them
-          safe and happy till you’re home.
+      <div class="header__button-container">
+        <button class="button header__connect-button">Connect</button>
+        <button
+          class="button header__dropdown-toggle"
+          id="header__dropdown-toggle"
+        >
+          <i class="zmdi zmdi-menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="intro">
+      <div class="intro__background-layer"></div>
+
+      <div class="intro__content">
+        <h2 class="intro__title">Travel to explore</h2>
+        <p class="intro__description">
+          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do
+          Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ultricies
+          Mi Eget Mauris Pharetra. Amet Risus Nullam Eget Felis Eget Nunc
+          Lobortis. Purus In Massa Tempor Nec. Porta Nibh Venenatis Cras Sed.
+          Viverra Ipsum Nunc Aliquet Bibendum Enim. Risus Pretium Quam Vulputate
+          Dignissim Suspendisse In. Non Quam Lacus Suspendisse Faucibus Interdum
+          Posuere Lorem Ipsum Dolor. Facilisi Cras Fermentum Odio Eu Feugiat
+          Pretium Nibh Ipsum. Risus Sed Vulputate Odio Ut Enim Blandit Volutpat
+          Maecenas. Netus Et Malesuada Fames Ac Turpis Egestas. Sed Arcu Non
+          Odio Euismod Lacinia At Quis Risus Sed. Praesent Elementum Facilisis
+          Leo Vel Fringilla Est Ullamcorper. Ullamcorper Dignissim Cras
+          Tincidunt Lobortis Feugiat Vivamus. Elit Pellentesque Habitant Morbi
+          Tristique Senectus Et Netus. Morbi Tincidunt Augue Interdum Velit.
         </p>
-        <button>Schedule a visit</button>
-      </div>
-      <div class="intro__image-grid">
-        <div class="image-container">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div class="image-container">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div class="image-container">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div class="image-container">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-      </div>
-    </section>
+        <form action="" class="intro__form-group">
+          <div class="intro__input-group intro__input-group--first">
+            <label for="">Where You Want to go</label>
+            <div>
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search your Location" />
+            </div>
+          </div>
 
-    <section class="service">
-      <div>
-        <h3 class="section-title">Services tailord</h3>
-        <p>
-          Schedule one-off or recurring home visits. An experienced member of
-          our team will spend time with your pet, feed them, change cat litter
-          trays, take the dog for a walk, and anything else you need.
+          <div class="intro__input-group intro__input-group--second">
+            <label for="">Check-in</label>
+            <input type="text" placeholder="Add Date" />
+          </div>
+
+          <div class="intro__input-group intro__input-group--last">
+            <label for="">Check-out</label>
+            <input type="text" placeholder="Add Date" />
+          </div>
+
+          <button class="intro__form-button button">Explore Now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="tips">
+      <div class="tips__card">
+        <div class="tips__card-image-container">
+          <img
+            src="../asset/img/page_one/Get Best Prices.svg"
+            alt="Best Prices"
+          />
+        </div>
+        <h4 class="tips__card-title">Get Best Prices</h4>
+        <p class="tips__card-description">
+          Pay through our application and save thousands and get amazing rewards
         </p>
-        <button>Schedule a visit</button>
       </div>
-    </section>
 
-    <section class="reviews">
-      <h3 class="section-title">Pets (and their humans) love us</h3>
-      <div class="reviews__card-container">
-        <div class="review-card">
-          <img src="" alt="" />
-          <h4 class="review-card__header"></h4>
-          <p></p>
+      <div class="tips__card">
+        <div class="tips__card-image-container">
+          <img src="../asset/img/page_one/Covid Safe.svg" alt="Covid safe" />
         </div>
-        <div class="review-card">
-          <img src="" alt="" />
-          <h4 class="review-card__header"></h4>
-          <p></p>
-        </div>
-        <div class="review-card">
-          <img src="" alt="" />
-          <h4 class="review-card__header"></h4>
-          <p></p>
-        </div>
-        <div class="review-card">
-          <img src="" alt="" />
-          <h4 class="review-card__header"></h4>
-          <p></p>
-        </div>
+        <h4 class="tips__card-title">Covid Safe</h4>
+        <p class="tips__card-description">
+          We have all the curated hotels that have all the precaution for a
+          corvid safe environment
+        </p>
       </div>
-      <button>Read all reviews</button>
-    </section>
 
-    <section class="options">
-      <h3 class="section-title"></h3>
-      <p></p>
-      <div class="options__card-container">
-        <div class="option-card">
-          <img src="" alt="" class="option-card__logo" />
-          <h4 class="option-card__header"></h4>
-          <p></p>
-          <div class="option-card__price-container">
-            <h4 class="option-card__price"></h4>
-            <p class="option-card__unit"></p>
+      <div class="tips__card tips__card--third">
+        <div class="tips__card-image-container">
+          <img
+            src="../asset/img/page_one/Flexible Payment.svg"
+            alt="Flexible Payment"
+          />
+        </div>
+        <h4 class="tips__card-title">Flexible Payment</h4>
+        <p class="tips__card-description">
+          Enjoy the flexible payment through our app and get rewards on every
+          payment
+        </p>
+      </div>
+
+      <div class="tips__card tips__card--last">
+        <div class="tips__card-image-container">
+          <img src="../asset/img/page_one/Nearby.svg" alt="Nearby" />
+        </div>
+        <h4 class="tips__card-title">Find The Best Near You</h4>
+        <p class="tips__card-description">
+          Find the best hotels and places to visit near you in single click
+        </p>
+      </div>
+    </div>
+
+    <div class="recommendation">
+      <h2 class="recommendation__title section-title">
+        Recommended Destinations
+      </h2>
+
+      <div class="recommendation__tab-header">
+        <h2 class="tab__link tab__link--active">The weekend break</h2>
+        <h2 class="tab__link">The package holiday</h2>
+        <h2 class="tab__link">The group tour</h2>
+        <h2 class="tab__link">long term slow travel</h2>
+      </div>
+
+      <div class="recommendation__tab-container">
+        <div class="tab__content tab__content--active">
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_singapore.png"
+              alt="Singapore"
+              loading="lazy"
+            />
+            <h4>Singapore</h4>
+            <p>
+              Singapore, officially the Republic of Singapore, is a sovereign
+              island city-state in maritime Southeast Asia.
+            </p>
+            <div class="recommendation__card-price">
+              <div class="logo-group">
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_thailand.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>Thailand</h4>
+            <p>
+              Thailand is a Southeast Asian country. It's known for tropical
+              beaches, opulent royal palaces
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_paris.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>Paris</h4>
+            <p>
+              Paris, France's capital, is a major European city and a global
+              center for art, fashion, gastronomy and culture.
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_newzealand.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>New Zealand</h4>
+            <p>
+              New Zealand is an island country in the southwestern Pacific
+              Ocean. It consists of two main landmasses
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 1 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img src="../asset/img/page_one/r_bora.png" alt="" loading="lazy" />
+            <h4>Bora Bora</h4>
+            <p>
+              Bora Bora is a small South Pacific island northwest of Tahiti in
+              French Polynesia. Surrounded by sand
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_london.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>London</h4>
+            <p>
+              London, the capital of England and the United Kingdom, is a
+              21st-century city with history stretching
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 3 night 2 day trip</p>
+            </div>
           </div>
         </div>
-        <div class="option-card">
-          <img src="" alt="" class="option-card__logo" />
-          <h4 class="option-card__header"></h4>
-          <p></p>
-          <div class="option-card__price-container">
-            <h4 class="option-card__price"></h4>
-            <p class="option-card__unit"></p>
+
+        <div class="tab__content">
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_singapore.png"
+              alt="Singapore"
+              loading="lazy"
+            />
+            <h4>Singapore</h4>
+            <p>
+              Singapore, officially the Republic of Singapore, is a sovereign
+              island city-state in maritime Southeast Asia.
+            </p>
+            <div class="recommendation__card-price">
+              <div class="logo-group">
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_thailand.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>Thailand</h4>
+            <p>
+              Thailand is a Southeast Asian country. It's known for tropical
+              beaches, opulent royal palaces
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_singapore.png"
+              alt="Singapore"
+              loading="lazy"
+            />
+            <h4>Singapore</h4>
+            <p>
+              Singapore, officially the Republic of Singapore, is a sovereign
+              island city-state in maritime Southeast Asia.
+            </p>
+            <div class="recommendation__card-price">
+              <div class="logo-group">
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_thailand.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>Thailand</h4>
+            <p>
+              Thailand is a Southeast Asian country. It's known for tropical
+              beaches, opulent royal palaces
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_singapore.png"
+              alt="Singapore"
+              loading="lazy"
+            />
+            <h4>Singapore</h4>
+            <p>
+              Singapore, officially the Republic of Singapore, is a sovereign
+              island city-state in maritime Southeast Asia.
+            </p>
+            <div class="recommendation__card-price">
+              <div class="logo-group">
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_thailand.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>Thailand</h4>
+            <p>
+              Thailand is a Southeast Asian country. It's known for tropical
+              beaches, opulent royal palaces
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night trip</p>
+            </div>
           </div>
         </div>
-        <div class="option-card">
-          <img src="" alt="" class="option-card__logo" />
-          <h4 class="option-card__header"></h4>
-          <p></p>
-          <div class="option-card__price-container">
-            <h4 class="option-card__price"></h4>
-            <p class="option-card__unit"></p>
+
+        <div class="tab__content">
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_london.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>London</h4>
+            <p>
+              London, the capital of England and the United Kingdom, is a
+              21st-century city with history stretching
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 3 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_london.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>London</h4>
+            <p>
+              London, the capital of England and the United Kingdom, is a
+              21st-century city with history stretching
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 3 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_london.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>London</h4>
+            <p>
+              London, the capital of England and the United Kingdom, is a
+              21st-century city with history stretching
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 3 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_london.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>London</h4>
+            <p>
+              London, the capital of England and the United Kingdom, is a
+              21st-century city with history stretching
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 3 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_london.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>London</h4>
+            <p>
+              London, the capital of England and the United Kingdom, is a
+              21st-century city with history stretching
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 3 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img
+              src="../asset/img/page_one/r_london.png"
+              alt=""
+              loading="lazy"
+            />
+            <h4>London</h4>
+            <p>
+              London, the capital of England and the United Kingdom, is a
+              21st-century city with history stretching
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 3 night 2 day trip</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab__content">
+          <div class="recommendation__card">
+            <img src="../asset/img/page_one/r_bora.png" alt="" loading="lazy" />
+            <h4>Bora Bora</h4>
+            <p>
+              Bora Bora is a small South Pacific island northwest of Tahiti in
+              French Polynesia. Surrounded by sand
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img src="../asset/img/page_one/r_bora.png" alt="" loading="lazy" />
+            <h4>Bora Bora</h4>
+            <p>
+              Bora Bora is a small South Pacific island northwest of Tahiti in
+              French Polynesia. Surrounded by sand
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img src="../asset/img/page_one/r_bora.png" alt="" loading="lazy" />
+            <h4>Bora Bora</h4>
+            <p>
+              Bora Bora is a small South Pacific island northwest of Tahiti in
+              French Polynesia. Surrounded by sand
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img src="../asset/img/page_one/r_bora.png" alt="" loading="lazy" />
+            <h4>Bora Bora</h4>
+            <p>
+              Bora Bora is a small South Pacific island northwest of Tahiti in
+              French Polynesia. Surrounded by sand
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img src="../asset/img/page_one/r_bora.png" alt="" loading="lazy" />
+            <h4>Bora Bora</h4>
+            <p>
+              Bora Bora is a small South Pacific island northwest of Tahiti in
+              French Polynesia. Surrounded by sand
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night 2 day trip</p>
+            </div>
+          </div>
+
+          <div class="recommendation__card">
+            <img src="../asset/img/page_one/r_bora.png" alt="" loading="lazy" />
+            <h4>Bora Bora</h4>
+            <p>
+              Bora Bora is a small South Pacific island northwest of Tahiti in
+              French Polynesia. Surrounded by sand
+            </p>
+            <div class="recommendation__card-price">
+              <div>
+                <img src="../asset/img/page_one/Group 19.png" alt="" />
+                <img src="../asset/img/page_one/Group 18.png" alt="" />
+                <img src="../asset/img/page_one/Group 17.png" alt="" />
+              </div>
+              <p>₹ 38,800</p>
+            </div>
+            <div class="recommendation__card-info">
+              <p>1000 Kms</p>
+              <p>Approx 2 night 2 day trip</p>
+            </div>
           </div>
         </div>
       </div>
-      <button>Schedule a visit</button>
-    </section>
+    </div>
 
-    <section class="contact">
-      <h3></h3>
-      <h3></h3>
-      <h3></h3>
-    </section>
+    <div class="blogs">
+      <h2 class="section-title">Blogs</h2>
+
+      <div class="blogs__container">
+        <div class="blogs__card blogs__card--first">
+          <img
+            src="../asset/img/page_one/blog1.png"
+            alt="The Ultimate Guide to Climbing Mount Kilimanjaro"
+          />
+          <div class="overlay"></div>
+          <div class="blogs__card-title-container">
+            <h3>
+              The Ultimate Guide <br />
+              to Climbing
+            </h3>
+            <h3>Mount Kilimanjaro</h3>
+          </div>
+        </div>
+
+        <div class="blogs__card blogs__card--second">
+          <img
+            src="../asset/img/page_one/blog2.png"
+            alt="12 Things I'd Tell Any New Traveler"
+          />
+          <div class="blogs__card-title-container">
+            <h3>
+              12 Things I’d Tell Any <br />
+              New Traveler
+            </h3>
+          </div>
+        </div>
+
+        <div class="blogs__card blogs__card--third">
+          <img
+            src="../asset/img/page_one/blog3.png"
+            alt="The Ultimate Packing List for Female Travelers"
+          />
+          <div class="blogs__card-title-container">
+            <h3>The Ultimate Packing List for</h3>
+            <h3>Female Travelers</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <h2 class="section-title">Happy Customers</h2>
+      <div class="reviews__container owl-carousel owl-theme">
+        <div class="reviews__card">
+          <img src="../asset/img/page_one/Icon metro-quote.svg" alt="" />
+          <div class="reviews__card-content">
+            <p class="reviews__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ultricies mi eget mauris pharetra. Amet risus nullam eget felis
+              eget nunc lobortis. Purus in massa tempor nec. Porta nibh
+              venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim.
+              Risus pretium quam vulputate dignissim suspendisse in. Non quam
+              lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
+            </p>
+            <div class="reviews__card-profile">
+              <img src="../asset/img/page_one/Ellipse 23.png" alt="" />
+              <div>
+                <p>Shalini Singh</p>
+                <p class="reviews__card-profile-title">
+                  Project Manger flyhigh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__card">
+          <img src="../asset/img/page_one/Icon metro-quote.svg" alt="" />
+          <div class="reviews__card-content">
+            <p class="reviews__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ultricies mi eget mauris pharetra. Amet risus nullam eget felis
+              eget nunc lobortis. Purus in massa tempor nec. Porta nibh
+              venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim.
+              Risus pretium quam vulputate dignissim suspendisse in. Non quam
+              lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
+            </p>
+            <div class="reviews__card-profile">
+              <img src="../asset/img/page_one/Ellipse 23.png" alt="" />
+              <div>
+                <p>Shalini Singh</p>
+                <p class="reviews__card-profile-title">
+                  Project Manger flyhigh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__card">
+          <img src="../asset/img/page_one/Icon metro-quote.svg" alt="" />
+          <div class="reviews__card-content">
+            <p class="reviews__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ultricies mi eget mauris pharetra. Amet risus nullam eget felis
+              eget nunc lobortis. Purus in massa tempor nec. Porta nibh
+              venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim.
+              Risus pretium quam vulputate dignissim suspendisse in. Non quam
+              lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
+            </p>
+            <div class="reviews__card-profile">
+              <img src="../asset/img/page_one/Ellipse 23.png" alt="" />
+              <div>
+                <p>Shalini Singh</p>
+                <p class="reviews__card-profile-title">
+                  Project Manger flyhigh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__card">
+          <img src="../asset/img/page_one/Icon metro-quote.svg" alt="" />
+          <div class="reviews__card-content">
+            <p class="reviews__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ultricies mi eget mauris pharetra. Amet risus nullam eget felis
+              eget nunc lobortis. Purus in massa tempor nec. Porta nibh
+              venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim.
+              Risus pretium quam vulputate dignissim suspendisse in. Non quam
+              lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
+            </p>
+            <div class="reviews__card-profile">
+              <img src="../asset/img/page_one/Ellipse 23.png" alt="" />
+              <div>
+                <p>Shalini Singh</p>
+                <p class="reviews__card-profile-title">
+                  Project Manger flyhigh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__copyright">
+        Copyright © 2020 Travelo. All rights reserved
+      </div>
+      <div class="footer__nav">
+        <a class="footer__nav-item footer__nav-item--active">Home</a>
+        <a class="footer__nav-item">About</a>
+        <a class="footer__nav-item">Places</a>
+        <a class="footer__nav-item">Careers</a>
+        <a class="footer__nav-item">Blogs</a>
+      </div>
+
+      <div class="footer__logo">
+        <a href=""><img src="../asset/img/page_one/facebook.png" alt="" /></a>
+        <a href=""><img src="../asset/img/page_one/LinkedIn.png" alt="" /></a>
+        <a href=""><img src="../asset/img/page_one/Instagram.png" alt="" /></a>
+      </div>
+    </div>
   </body>
-  <script src="../app.js"></script>
+
+  <script src="../page_one.js"></script>
+  <script
+    inline="inline"
+    src="../asset/javascript/page_one/carousel_initialize.js"
+  ></script>
 </html>

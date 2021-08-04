@@ -1,0 +1,42 @@
+@mixin font--thin {
+  font-weight: 100;
+  font-family: 'Proxima Nova Alt Th';
+}
+
+// @mixin font--extraLight {
+//   font-weight: 200;
+// }
+
+@mixin font--light {
+  font-weight: 300;
+  font-family: 'Proxima Nova Alt Lt';
+}
+
+@mixin font--regular {
+  font-weight: 400;
+  font-family: 'Proxima Nova Alt Rg';
+}
+
+// @mixin font--medium {
+//   font-weight: 500;
+// }
+
+@mixin font--semiBold {
+  font-weight: 600;
+  font-family: 'Proxima Nova Alt Lt';
+}
+
+@mixin font--bold {
+  font-weight: 700;
+  font-family: 'Proxima Nova Alt Rg'; 
+}
+
+@mixin font--extraBold {
+  font-weight: 800;
+  font-family: 'Proxima Nova Alt Th';
+}
+
+@mixin font--black {
+  font-weight: 900;
+  font-family: 'Proxima Nova Alt Bl';
+}

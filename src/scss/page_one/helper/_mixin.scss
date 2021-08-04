@@ -1,0 +1,9 @@
+@mixin maxWidth($screen) {
+  @media screen and (max-width: $screen) {
+    @content;
+  }
+}
+
+@mixin letterSpacing($spacing) {
+  letter-spacing: ($spacing / 1000) * 1em;
+}

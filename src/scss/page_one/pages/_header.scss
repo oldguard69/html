@@ -1,0 +1,101 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin: 20px 70px 0;
+
+  @include maxWidth($large) {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px 30px;
+  }
+
+  @include maxWidth($medium) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    margin: 20px 15px;
+  }
+
+  @include maxWidth($small) {
+    display: flex;
+    position: relative;
+  }
+
+  &__logo {
+    height: auto;
+    width: 92px;
+  }
+
+  &__dropdown-toggle {
+    display: none;
+    margin-left: 10px;
+    place-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    @include maxWidth($small) {
+      display: grid;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -3px;
+    @include font--regular;
+
+    @include maxWidth($large) {
+      grid-column: 2 / span 3;
+    }
+
+    @include maxWidth($medium) {
+      grid-row: 2;
+      grid-column: span 2;
+    }
+
+    @include maxWidth($small) {
+      display: none;
+      flex-direction: column;
+      padding: 5px 10px;
+      box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.4);
+      border-radius: 10px;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 1;
+      width: 30%;
+      background-color: white;
+    }
+
+    &--display {
+      display: flex;
+    }
+
+    &-item {
+      font-size: 22px;
+      line-height: 30px;
+      color: rgba(28, 73, 97, 1);
+      margin-right: -12px;
+      text-decoration: none;
+
+      &:last-child {
+        margin-right: -1px;
+      }
+
+      &--active,
+      &:hover {
+        color: rgba(28, 73, 94, 1);
+        @include font--semiBold;
+      }
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__connect-button {
+    justify-self: end;
+  }
+}

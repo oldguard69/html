@@ -1,0 +1,15 @@
+.button {
+    @include font--regular;
+    color: white;
+    background-color: $brand-color;
+    padding: 2px 20px 6px 19px;
+    font-size: 19px;
+    line-height: 26px;
+    border-radius: 17px;
+    @include letterSpacing(-38);
+
+    &, &:focus {
+        border: none;
+        outline: none;
+    }
+}
